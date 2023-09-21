@@ -10,7 +10,7 @@ class DBMySQL{
 		//else create new instance
 		$server = "localhost";
 		$user = "root";
-		$password = "";
+		$password = "warez1896";
 		$database = "maasin_bamboo_system";
 		try{
 			$conn = new mysqli($server, $user, $password, $database);
@@ -19,7 +19,6 @@ class DBMySQL{
 			return $conn;
 		}catch(Exception $e){
 			die(print_r($e, true));
-
 		}
 	}
 }

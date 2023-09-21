@@ -1,4 +1,5 @@
 <?php
+session_start();
 require "../dbconfig/db_conn.php";
 $alertOutput = "";
 try{
