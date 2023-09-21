@@ -37,6 +37,7 @@ try{
 				$query = $conn->prepare("INSERT INTO bamboo_inventory_logs(bamboo_section_id, initial_matured, initial_young, initial_destroyed, initial_harvested, initial_exported, remarks) VALUES(?, ?, ?, ?, ?, ?, ?)");
 				$query->bind_param("iiiiiis", $sectionID, $matured, $young, $destroyed, $harvested, $exported, $remarks);
 				$query->execute();
+				
 				$alertOutput = "Successfully added bamboo section";
 			}
 			else
